@@ -33,6 +33,10 @@ public class TestConf {
     @NotNull
     public String ipvPassword;
 
+    @Valid
+    @NotNull
+    public String applicationPath;
+
     @NotNull
     public String getIpvUser() {
         return ipvUser;
@@ -41,6 +45,11 @@ public class TestConf {
     @NotNull
     public String getIpvPassword() {
         return ipvPassword;
+    }
+
+    @NotNull
+    public String getApplicationPath() {
+        return applicationPath;
     }
 
     public static TestConf getTestConf() {

@@ -4,14 +4,13 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import sp.util.TestConf;
+
 
 public class StepDefinitions {
 
     @Given("^IPVanish is accessible$")
     public void ipvanish_is_accessible() throws Throwable {
-        System.out.println(TestConf.getTestConf().getIpvUser());
-        System.out.println(TestConf.getTestConf().getIpvPassword());
+
     }
 
     @When("^I submit the username and the password$")
