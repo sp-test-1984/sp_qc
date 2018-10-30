@@ -28,8 +28,16 @@ public class StepDefinitions {
 
     @Given("^user selects \"([^\"]*)\"$")
     public void user_selects(String protocol) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        takeANap();
+        AppHelper.launchPreferences();
+        switch (protocol.toLowerCase()){
+            case "ikev2":
+                AppHelper.selectIkev2();
+                break;
+            case "ipsec":
+                AppHelper.selectIpsec();
+                break;
+        }
     }
 
     @When("^connection is attempted$")
@@ -42,6 +50,14 @@ public class StepDefinitions {
     public void connection_should_be_established_through_a_secure_tunnel() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
+    }
+
+    public void takeANap(){
+        try{
+            Thread.sleep(3000);
+        }catch (InterruptedException interruptedException){
+
+        }
     }
 
     @After
