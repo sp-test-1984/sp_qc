@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="40" failures="0" name="sp.RunnerTest" time="46.853" errors="0" skipped="25">
+<testsuite tests="40" failures="0" name="sp.RunnerTest" time="36.419" errors="0" skipped="20">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
@@ -46,7 +46,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.4/libexec/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,114 +65,134 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="| ikev2 |" name="Given IPVanish is accessible" time="0.002"/>
+  <testcase classname="| ikev2 |" name="Given IPVanish is accessible" time="0.003"/>
   <testcase classname="| ikev2 |" name="When I submit the username and the password" time="0"/>
-  <testcase classname="| ikev2 |" name="Then I should be logged in" time="0.003">
+  <testcase classname="| ikev2 |" name="Then I should be logged in" time="0"/>
+  <testcase classname="| ikev2 |" name="Given user selects &quot;ikev2&quot;" time="0.008">
     <skipped/>
-  </testcase>
-  <testcase classname="| ikev2 |" name="Given user selects &quot;ikev2&quot;" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="| ikev2 |" name="When connection is attempted" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="| ikev2 |" name="Then connection should be  established through a secure tunnel" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="| ikev2 |" name="| ikev2 |" time="4.646">
-    <skipped/>
-    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (614 msec)
-[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (613 msec)
-[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (617 msec)
+    <system-out>
+  Background: User is Logged in.                &amp;#27;[90m# quick_connect.feature:7&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mIPVanish is accessible&amp;#27;[0m                &amp;#27;[90m# StepDefinitions.ipvanish_is_accessible()&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI submit the username and the password&amp;#27;[0m &amp;#27;[90m# StepDefinitions.i_submit_the_username_and_the_password()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should be logged in&amp;#27;[0m                  &amp;#27;[90m# StepDefinitions.i_should_be_logged_in()&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase classname="| ikev2 |" name="| ikev2 |" time="4.646"/>
+  <testcase classname="| ikev2 |" name="When connection is attempted" time="0.009">
+    <skipped/>
+  </testcase>
+  <testcase classname="| ikev2 |" name="Then connection should be  established through a secure tunnel" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="| ikev2 |" name="| ikev2 |" time="3.67">
+    <skipped/>
+    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (607 msec)
+[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (609 msec)
+[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (615 msec)
+</system-out>
+  </testcase>
+  <testcase classname="| ikev2 |" name="| ikev2 |" time="3.67"/>
   <testcase classname="| ipsec |" name="Given IPVanish is accessible" time="0"/>
   <testcase classname="| ipsec |" name="When I submit the username and the password" time="0"/>
-  <testcase classname="| ipsec |" name="Then I should be logged in" time="0.001">
+  <testcase classname="| ipsec |" name="Then I should be logged in" time="0"/>
+  <testcase classname="| ipsec |" name="Given user selects &quot;ipsec&quot;" time="0.003">
+    <skipped/>
+    <system-out>
+  Background: User is Logged in.                &amp;#27;[90m# quick_connect.feature:7&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mIPVanish is accessible&amp;#27;[0m                &amp;#27;[90m# StepDefinitions.ipvanish_is_accessible()&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI submit the username and the password&amp;#27;[0m &amp;#27;[90m# StepDefinitions.i_submit_the_username_and_the_password()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should be logged in&amp;#27;[0m                  &amp;#27;[90m# StepDefinitions.i_should_be_logged_in()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| ipsec |" name="When connection is attempted" time="0.004">
     <skipped/>
   </testcase>
-  <testcase classname="| ipsec |" name="Given user selects &quot;ipsec&quot;" time="0.002">
+  <testcase classname="| ipsec |" name="Then connection should be  established through a secure tunnel" time="0.004">
     <skipped/>
   </testcase>
-  <testcase classname="| ipsec |" name="When connection is attempted" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="| ipsec |" name="Then connection should be  established through a secure tunnel" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="| ipsec |" name="| ipsec |" time="4.672">
+  <testcase classname="| ipsec |" name="| ipsec |" time="3.609">
     <skipped/>
     <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (610 msec)
-[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (609 msec)
-[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (608 msec)
-</system-out>
-  </testcase>
-  <testcase classname="| ipsec |" name="| ipsec |" time="4.672"/>
-  <testcase classname="| l2tp |" name="Given IPVanish is accessible" time="0"/>
-  <testcase classname="| l2tp |" name="When I submit the username and the password" time="0"/>
-  <testcase classname="| l2tp |" name="Then I should be logged in" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| l2tp |" name="Given user selects &quot;l2tp&quot;" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| l2tp |" name="When connection is attempted" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| l2tp |" name="Then connection should be  established through a secure tunnel" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="| l2tp |" name="| l2tp |" time="4.566">
-    <skipped/>
-    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (616 msec)
-[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (606 msec)
-[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (612 msec)
-</system-out>
-  </testcase>
-  <testcase classname="| l2tp |" name="| l2tp |" time="4.566"/>
-  <testcase classname="| tcp |" name="Given IPVanish is accessible" time="0"/>
-  <testcase classname="| tcp |" name="When I submit the username and the password" time="0"/>
-  <testcase classname="| tcp |" name="Then I should be logged in" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| tcp |" name="Given user selects &quot;tcp&quot;" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| tcp |" name="When connection is attempted" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="| tcp |" name="Then connection should be  established through a secure tunnel" time="0.002">
-    <skipped/>
-  </testcase>
-  <testcase classname="| tcp |" name="| tcp |" time="4.559">
-    <skipped/>
-    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (609 msec)
 [log] CLICK on L(972,674)@S(0)[0,0 1440x900] (614 msec)
-[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (606 msec)
+[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (615 msec)
 </system-out>
   </testcase>
-  <testcase classname="| tcp |" name="| tcp |" time="4.559"/>
-  <testcase classname="| udp |" name="Given IPVanish is accessible" time="0"/>
-  <testcase classname="| udp |" name="When I submit the username and the password" time="0"/>
-  <testcase classname="| udp |" name="Then I should be logged in" time="0">
+  <testcase classname="| ipsec |" name="| ipsec |" time="3.609"/>
+  <testcase classname="| l2tp |" name="Given IPVanish is accessible" time="0"/>
+  <testcase classname="| l2tp |" name="When I submit the username and the password" time="0.001"/>
+  <testcase classname="| l2tp |" name="Then I should be logged in" time="0"/>
+  <testcase classname="| l2tp |" name="Given user selects &quot;l2tp&quot;" time="0.002">
+    <skipped/>
+    <system-out>
+  Background: User is Logged in.                &amp;#27;[90m# quick_connect.feature:7&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mIPVanish is accessible&amp;#27;[0m                &amp;#27;[90m# StepDefinitions.ipvanish_is_accessible()&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI submit the username and the password&amp;#27;[0m &amp;#27;[90m# StepDefinitions.i_submit_the_username_and_the_password()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should be logged in&amp;#27;[0m                  &amp;#27;[90m# StepDefinitions.i_should_be_logged_in()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| l2tp |" name="When connection is attempted" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="| udp |" name="Given user selects &quot;udp&quot;" time="0">
+  <testcase classname="| l2tp |" name="Then connection should be  established through a secure tunnel" time="0.004">
     <skipped/>
   </testcase>
-  <testcase classname="| udp |" name="When connection is attempted" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="| udp |" name="Then connection should be  established through a secure tunnel" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="| udp |" name="| udp |" time="4.966">
+  <testcase classname="| l2tp |" name="| l2tp |" time="3.646">
     <skipped/>
     <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (608 msec)
 [log] CLICK on L(972,674)@S(0)[0,0 1440x900] (609 msec)
-[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (606 msec)
+[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (616 msec)
 </system-out>
   </testcase>
-  <testcase classname="| udp |" name="| udp |" time="4.966"/>
+  <testcase classname="| l2tp |" name="| l2tp |" time="3.646"/>
+  <testcase classname="| tcp |" name="Given IPVanish is accessible" time="0"/>
+  <testcase classname="| tcp |" name="When I submit the username and the password" time="0"/>
+  <testcase classname="| tcp |" name="Then I should be logged in" time="0"/>
+  <testcase classname="| tcp |" name="Given user selects &quot;tcp&quot;" time="0.002">
+    <skipped/>
+    <system-out>
+  Background: User is Logged in.                &amp;#27;[90m# quick_connect.feature:7&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mIPVanish is accessible&amp;#27;[0m                &amp;#27;[90m# StepDefinitions.ipvanish_is_accessible()&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI submit the username and the password&amp;#27;[0m &amp;#27;[90m# StepDefinitions.i_submit_the_username_and_the_password()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should be logged in&amp;#27;[0m                  &amp;#27;[90m# StepDefinitions.i_should_be_logged_in()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| tcp |" name="When connection is attempted" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| tcp |" name="Then connection should be  established through a secure tunnel" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| tcp |" name="| tcp |" time="3.628">
+    <skipped/>
+    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (610 msec)
+[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (615 msec)
+[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (617 msec)
+</system-out>
+  </testcase>
+  <testcase classname="| tcp |" name="| tcp |" time="3.628"/>
+  <testcase classname="| udp |" name="Given IPVanish is accessible" time="0"/>
+  <testcase classname="| udp |" name="When I submit the username and the password" time="0"/>
+  <testcase classname="| udp |" name="Then I should be logged in" time="0"/>
+  <testcase classname="| udp |" name="Given user selects &quot;udp&quot;" time="0.002">
+    <skipped/>
+    <system-out>
+  Background: User is Logged in.                &amp;#27;[90m# quick_connect.feature:7&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mIPVanish is accessible&amp;#27;[0m                &amp;#27;[90m# StepDefinitions.ipvanish_is_accessible()&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI submit the username and the password&amp;#27;[0m &amp;#27;[90m# StepDefinitions.i_submit_the_username_and_the_password()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should be logged in&amp;#27;[0m                  &amp;#27;[90m# StepDefinitions.i_should_be_logged_in()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| udp |" name="When connection is attempted" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| udp |" name="Then connection should be  established through a secure tunnel" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| udp |" name="| udp |" time="3.623">
+    <skipped/>
+    <system-out>[log] CLICK on L(211,525)@S(0)[0,0 1440x900] (615 msec)
+[log] CLICK on L(972,674)@S(0)[0,0 1440x900] (614 msec)
+[log] CLICK on L(780,309)@S(0)[0,0 1440x900] (608 msec)
+</system-out>
+  </testcase>
+  <testcase classname="| udp |" name="| udp |" time="3.623"/>
 </testsuite>

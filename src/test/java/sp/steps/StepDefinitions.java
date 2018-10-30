@@ -23,8 +23,7 @@ public class StepDefinitions {
 
     @Then("^I should be logged in$")
     public void i_should_be_logged_in() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        Assert.assertTrue("unsuccessful loging attempt - ", AppHelper.isLogged());
     }
 
     @Given("^user selects \"([^\"]*)\"$")

@@ -44,4 +44,16 @@ public class AppHelper {
             findFailed.printStackTrace();
         }
     }
+
+    public static boolean isLogged(){
+        boolean isLogged;
+        try {
+            SCREEN.find(Images.ACCOUNT);
+            isLogged = true;
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+            isLogged = false;
+        }
+        return isLogged;
+    }
 }
