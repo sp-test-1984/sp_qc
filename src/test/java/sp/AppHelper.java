@@ -1,5 +1,6 @@
 package sp;
 
+import org.opencv.core.Mat;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Key;
 import org.sikuli.script.Match;
@@ -64,34 +65,55 @@ public class AppHelper {
         SCREEN.type(",", Key.META);
     }
 
-    public static void selectIkev2(){
+    public static void selectIkev2() throws InterruptedException {
+
         try {
-            SCREEN.click(Images.PROTOCOL_SELECTOR);
+            Iterator<Match> protocolSelectorMatches = SCREEN.findAll(Images.PROTOCOL_SELECTOR);
+            Match element = null;
+            while (protocolSelectorMatches.hasNext()){
+                element = protocolSelectorMatches.next();
+                System.out.println("score: >>>" + element.getScore());
+                if(element.getScore() > 0.90)
+                    element.click();
+            }
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+
+        Thread.sleep(3000);
+
+        try {
             SCREEN.click(Images.IKEV2);
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
+
         closePreferences();
+
     }
 
-    public static void selectIpsec(){
+    public static void selectIpsec() throws InterruptedException {
         try {
-            SCREEN.click(Images.PROTOCOL_SELECTOR);
-            Thread.sleep(3000);
-            Iterator<Match> all = SCREEN.findAll(Images.IPSEC);
-            Match el = null;
-            while (all.hasNext()){
-                el = all.next();
-
-                if (el.getScore() > 0.98){
-                    el.click();
-                }
-
-                System.out.println(el.getScore());
+            Iterator<Match> protocolSelectorMatches = SCREEN.findAll(Images.PROTOCOL_SELECTOR);
+            Match element = null;
+            while (protocolSelectorMatches.hasNext()){
+                element = protocolSelectorMatches.next();
+                System.out.println("score: >>>" + element.getScore());
+                if(element.getScore() > 0.90)
+                    element.click();
             }
-        } catch (FindFailed | InterruptedException findFailed) {
+        } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
+
+        Thread.sleep(3000);
+
+        try {
+            SCREEN.click(Images.IPSEC);
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+
         closePreferences();
     }
 

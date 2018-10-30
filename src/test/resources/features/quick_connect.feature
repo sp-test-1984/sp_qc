@@ -19,6 +19,6 @@ Feature: Exercise Quick Connect through main functional path
          |protocol|
          |ikev2   |
          |ipsec   |
-         |l2tp    |
-         |tcp     |
-         |udp     |
+         #|l2tp    |
+         #|tcp     |
+         #|udp     |

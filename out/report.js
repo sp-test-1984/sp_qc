@@ -55,27 +55,6 @@ formatter.examples({
       ],
       "line": 21,
       "id": "exercise-quick-connect-through-main-functional-path;;;3"
-    },
-    {
-      "cells": [
-        "l2tp"
-      ],
-      "line": 22,
-      "id": "exercise-quick-connect-through-main-functional-path;;;4"
-    },
-    {
-      "cells": [
-        "tcp"
-      ],
-      "line": 23,
-      "id": "exercise-quick-connect-through-main-functional-path;;;5"
-    },
-    {
-      "cells": [
-        "udp"
-      ],
-      "line": 24,
-      "id": "exercise-quick-connect-through-main-functional-path;;;6"
     }
   ],
   "keyword": "Examples"
@@ -106,21 +85,21 @@ formatter.match({
   "location": "StepDefinitions.ipvanish_is_accessible()"
 });
 formatter.result({
-  "duration": 2050567066,
+  "duration": 2290635596,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_submit_the_username_and_the_password()"
 });
 formatter.result({
-  "duration": 6192718586,
+  "duration": 4247242842,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_should_be_logged_in()"
 });
 formatter.result({
-  "duration": 1209309020,
+  "duration": 2016981315,
   "status": "passed"
 });
 formatter.scenario({
@@ -159,14 +138,14 @@ formatter.match({
   "location": "StepDefinitions.user_selects(String)"
 });
 formatter.result({
-  "duration": 6379641756,
+  "duration": 8678457977,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.connection_is_attempted()"
 });
 formatter.result({
-  "duration": 1525694,
+  "duration": 1440476,
   "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
   "status": "pending"
 });
@@ -177,7 +156,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 3868337536,
+  "duration": 3975117152,
   "status": "passed"
 });
 formatter.background({
@@ -206,21 +185,21 @@ formatter.match({
   "location": "StepDefinitions.ipvanish_is_accessible()"
 });
 formatter.result({
-  "duration": 7321319,
+  "duration": 6756415,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_submit_the_username_and_the_password()"
 });
 formatter.result({
-  "duration": 5354213098,
+  "duration": 5278372583,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_should_be_logged_in()"
 });
 formatter.result({
-  "duration": 1194875980,
+  "duration": 1365029320,
   "status": "passed"
 });
 formatter.scenario({
@@ -259,14 +238,14 @@ formatter.match({
   "location": "StepDefinitions.user_selects(String)"
 });
 formatter.result({
-  "duration": 8868293415,
+  "duration": 8669390804,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.connection_is_attempted()"
 });
 formatter.result({
-  "duration": 202803,
+  "duration": 189580,
   "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
   "status": "pending"
 });
@@ -277,307 +256,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 4243887496,
-  "status": "passed"
-});
-formatter.background({
-  "line": 7,
-  "name": "User is Logged in.",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "IPVanish is accessible",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "I submit the username and the password",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "I should be logged in",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.ipvanish_is_accessible()"
-});
-formatter.result({
-  "duration": 6076184,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_submit_the_username_and_the_password()"
-});
-formatter.result({
-  "duration": 5330710402,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_should_be_logged_in()"
-});
-formatter.result({
-  "duration": 1659912559,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "",
-  "description": "",
-  "id": "exercise-quick-connect-through-main-functional-path;;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "user selects \"l2tp\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "connection is attempted",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "connection should be  established through a secure tunnel",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "l2tp",
-      "offset": 14
-    }
-  ],
-  "location": "StepDefinitions.user_selects(String)"
-});
-formatter.result({
-  "duration": 3074834654,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_is_attempted()"
-});
-formatter.result({
-  "duration": 209355,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
-  "status": "pending"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_should_be_established_through_a_secure_tunnel()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 3547842889,
-  "status": "passed"
-});
-formatter.background({
-  "line": 7,
-  "name": "User is Logged in.",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "IPVanish is accessible",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "I submit the username and the password",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "I should be logged in",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.ipvanish_is_accessible()"
-});
-formatter.result({
-  "duration": 9984560,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_submit_the_username_and_the_password()"
-});
-formatter.result({
-  "duration": 5346541280,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_should_be_logged_in()"
-});
-formatter.result({
-  "duration": 1183760833,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "",
-  "description": "",
-  "id": "exercise-quick-connect-through-main-functional-path;;;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "user selects \"tcp\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "connection is attempted",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "connection should be  established through a secure tunnel",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "tcp",
-      "offset": 14
-    }
-  ],
-  "location": "StepDefinitions.user_selects(String)"
-});
-formatter.result({
-  "duration": 3091157113,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_is_attempted()"
-});
-formatter.result({
-  "duration": 267310,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
-  "status": "pending"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_should_be_established_through_a_secure_tunnel()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 3573284799,
-  "status": "passed"
-});
-formatter.background({
-  "line": 7,
-  "name": "User is Logged in.",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "IPVanish is accessible",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "I submit the username and the password",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "I should be logged in",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.ipvanish_is_accessible()"
-});
-formatter.result({
-  "duration": 9026995,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_submit_the_username_and_the_password()"
-});
-formatter.result({
-  "duration": 5358627406,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.i_should_be_logged_in()"
-});
-formatter.result({
-  "duration": 1195208681,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "",
-  "description": "",
-  "id": "exercise-quick-connect-through-main-functional-path;;;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "user selects \"udp\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "connection is attempted",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "connection should be  established through a secure tunnel",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "udp",
-      "offset": 14
-    }
-  ],
-  "location": "StepDefinitions.user_selects(String)"
-});
-formatter.result({
-  "duration": 3088534721,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_is_attempted()"
-});
-formatter.result({
-  "duration": 249338,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
-  "status": "pending"
-});
-formatter.match({
-  "location": "StepDefinitions.connection_should_be_established_through_a_secure_tunnel()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 3560679994,
+  "duration": 3948893298,
   "status": "passed"
 });
 });
