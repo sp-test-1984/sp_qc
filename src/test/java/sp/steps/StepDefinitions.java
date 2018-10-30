@@ -4,13 +4,15 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
+import sp.AppHelper;
 
 
 public class StepDefinitions {
 
     @Given("^IPVanish is accessible$")
     public void ipvanish_is_accessible() throws Throwable {
-
+        Assert.assertTrue("application is not accessible - ", AppHelper.isAccessible());
     }
 
     @When("^I submit the username and the password$")

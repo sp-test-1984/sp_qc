@@ -27,15 +27,15 @@ public class TestConf {
 
     @Valid
     @NotNull
-    public String ipvUser;
+    private String ipvUser;
 
     @Valid
     @NotNull
-    public String ipvPassword;
+    private String ipvPassword;
 
     @Valid
     @NotNull
-    public String applicationPath;
+    private String applicationPath;
 
     @NotNull
     public String getIpvUser() {
