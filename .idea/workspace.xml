@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb4b8bc8-92cc-487a-b0f9-2a3f3d916348" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/images/close_preferences.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/images/ikev2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/images/ipsec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/images/protocol_selector.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sp/AppHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sp/AppHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sp/steps/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sp/steps/StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sp/util/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sp/util/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sp.RunnerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-sp.RunnerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sp.RunnerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/sp.RunnerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sp/AppHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sp/AppHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sp/steps/StepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sp/steps/StepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sp/util/Images.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/sp/util/Images.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sp/AppHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+            <state relative-caret-position="180">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,7 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540933315296" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540933327485" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -367,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sp/AppHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

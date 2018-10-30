@@ -1,6 +1,5 @@
 package sp;
 
-import org.opencv.core.Mat;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Key;
 import org.sikuli.script.Match;
