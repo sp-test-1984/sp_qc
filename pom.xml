@@ -14,6 +14,7 @@
         <jaxb.api.version>2.2.11</jaxb.api.version>
         <junit.version>4.11</junit.version>
         <hibernate-validator.version>4.3.0.Final</hibernate-validator.version>
+        <sikulix.version>100.0</sikulix.version>
         <slf4j.version>1.7.6</slf4j.version>
         <typesafe.version>1.0.2</typesafe.version>
     </properties>
@@ -68,6 +69,12 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
+        </dependency>
+        <!-- image recognition-->
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>${sikulix.version}</version>
         </dependency>
     </dependencies>
 

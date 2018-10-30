@@ -1,4 +1,5 @@
-sp/steps/StepDefinitions.class
-sp/RunnerTest.class
 sp/util/TestConf.class
+sp/steps/StepDefinitions.class
+sp/util/Images.class
+sp/RunnerTest.class
 sp/AppHelper.class

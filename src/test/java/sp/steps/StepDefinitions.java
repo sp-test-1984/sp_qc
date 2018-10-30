@@ -1,6 +1,7 @@
 package sp.steps;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,8 +18,7 @@ public class StepDefinitions {
 
     @When("^I submit the username and the password$")
     public void i_submit_the_username_and_the_password() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        AppHelper.login();
     }
 
     @Then("^I should be logged in$")
@@ -43,6 +43,11 @@ public class StepDefinitions {
     public void connection_should_be_established_through_a_secure_tunnel() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
+    }
+
+    @After
+    public void tearDown(){
+        AppHelper.tearDown();
     }
 
 }
