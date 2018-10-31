@@ -1,10 +1,9 @@
 package sp;
 
 import org.opencv.core.Mat;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Key;
-import org.sikuli.script.Match;
-import org.sikuli.script.Screen;
+import org.sikuli.script.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import sp.util.Images;
 import sp.util.TestConf;
 
@@ -16,6 +15,7 @@ import java.util.Iterator;
 public class AppHelper {
 
     private static final Screen SCREEN = new Screen();
+    private static final Logger LOG = LoggerFactory.getLogger(AppHelper.class);
 
     public static boolean isAccessible(){
         boolean canBeAccessed;
@@ -93,28 +93,9 @@ public class AppHelper {
     }
 
     public static void selectIpsec() throws InterruptedException {
-        try {
-            Iterator<Match> protocolSelectorMatches = SCREEN.findAll(Images.PROTOCOL_SELECTOR);
-            Match element = null;
-            while (protocolSelectorMatches.hasNext()){
-                element = protocolSelectorMatches.next();
-                System.out.println("score: >>>" + element.getScore());
-                if(element.getScore() > 0.90)
-                    element.click();
-            }
-        } catch (FindFailed findFailed) {
-            findFailed.printStackTrace();
-        }
-
-        Thread.sleep(3000);
-
-        try {
-            SCREEN.click(Images.IPSEC);
-        } catch (FindFailed findFailed) {
-            findFailed.printStackTrace();
-        }
-
-        closePreferences();
+       clickClosestMatch(Images.PROTOCOL_SELECTOR, 0.90);
+       Thread.sleep(3000);
+       closePreferences();
     }
 
     private static void closePreferences(){
@@ -122,6 +103,21 @@ public class AppHelper {
             SCREEN.click(Images.CLOSE_PREFERENCES);
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
+        }
+    }
+
+    public static void clickClosestMatch(String target, double proximity){
+        try {
+            Iterator<Match> all = SCREEN.findAll(target);
+            Match element = null;
+            while (all.hasNext()){
+                element = all.next();
+                if(element.getScore() > proximity){
+                    element.click();
+                }
+            }
+        } catch (FindFailed findFailed) {
+            LOG.error("no image matched target.");
         }
     }
 }

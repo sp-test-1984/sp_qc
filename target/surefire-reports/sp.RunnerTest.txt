@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: sp.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 40.812 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 38.515 sec
