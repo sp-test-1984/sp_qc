@@ -85,21 +85,21 @@ formatter.match({
   "location": "StepDefinitions.ipvanish_is_accessible()"
 });
 formatter.result({
-  "duration": 2454315150,
+  "duration": 2367134127,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_submit_the_username_and_the_password()"
 });
 formatter.result({
-  "duration": 4308226898,
+  "duration": 4283898337,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_should_be_logged_in()"
 });
 formatter.result({
-  "duration": 1202395142,
+  "duration": 1655533947,
   "status": "passed"
 });
 formatter.scenario({
@@ -138,14 +138,14 @@ formatter.match({
   "location": "StepDefinitions.user_selects(String)"
 });
 formatter.result({
-  "duration": 8614523517,
+  "duration": 10812884030,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.connection_is_attempted()"
 });
 formatter.result({
-  "duration": 1531983,
+  "duration": 2344052,
   "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
   "status": "pending"
 });
@@ -156,7 +156,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 3768677425,
+  "duration": 3318686620,
   "status": "passed"
 });
 formatter.background({
@@ -185,21 +185,21 @@ formatter.match({
   "location": "StepDefinitions.ipvanish_is_accessible()"
 });
 formatter.result({
-  "duration": 6914324,
+  "duration": 6420349,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_submit_the_username_and_the_password()"
 });
 formatter.result({
-  "duration": 5090144609,
+  "duration": 5071842937,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.i_should_be_logged_in()"
 });
 formatter.result({
-  "duration": 1174268564,
+  "duration": 1154349322,
   "status": "passed"
 });
 formatter.scenario({
@@ -238,14 +238,14 @@ formatter.match({
   "location": "StepDefinitions.user_selects(String)"
 });
 formatter.result({
-  "duration": 7802314411,
+  "duration": 10810616156,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.connection_is_attempted()"
 });
 formatter.result({
-  "duration": 261012,
+  "duration": 298844,
   "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat sp.steps.StepDefinitions.connection_is_attempted(StepDefinitions.java:46)\n\tat ✽.When connection is attempted(quick_connect.feature:15)\n",
   "status": "pending"
 });
@@ -256,7 +256,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 3747305003,
+  "duration": 3705622724,
   "status": "passed"
 });
 });

@@ -67,35 +67,18 @@ public class AppHelper {
 
     public static void selectIkev2() throws InterruptedException {
 
-        try {
-            Iterator<Match> protocolSelectorMatches = SCREEN.findAll(Images.PROTOCOL_SELECTOR);
-            Match element = null;
-            while (protocolSelectorMatches.hasNext()){
-                element = protocolSelectorMatches.next();
-                System.out.println("score: >>>" + element.getScore());
-                if(element.getScore() > 0.90)
-                    element.click();
-            }
-        } catch (FindFailed findFailed) {
-            findFailed.printStackTrace();
-        }
-
+        clickClosestMatch(Images.PROTOCOL_SELECTOR, 0.90);
         Thread.sleep(3000);
-
-        try {
-            SCREEN.click(Images.IKEV2);
-        } catch (FindFailed findFailed) {
-            findFailed.printStackTrace();
-        }
-
-        closePreferences();
+        clickClosestMatch(Images.IKEV2, 0.90);
+        Thread.sleep(3000);
 
     }
 
     public static void selectIpsec() throws InterruptedException {
-       clickClosestMatch(Images.PROTOCOL_SELECTOR, 0.90);
-       Thread.sleep(3000);
-       closePreferences();
+        clickClosestMatch(Images.PROTOCOL_SELECTOR, 0.90);
+        Thread.sleep(3000);
+        clickClosestMatch(Images.IPSEC, 0.90);
+        Thread.sleep(3000);
     }
 
     private static void closePreferences(){
