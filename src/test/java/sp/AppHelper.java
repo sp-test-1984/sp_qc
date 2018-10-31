@@ -100,7 +100,7 @@ public class AppHelper {
                 }
             }
         } catch (FindFailed findFailed) {
-            LOG.error("no image matched target.");
+            LOG.error("Along with dark matter and supersymmetry we're having trouble finding that image");
         }
     }
 }
